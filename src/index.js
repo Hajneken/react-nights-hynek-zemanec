@@ -6,6 +6,8 @@ import * as serviceWorker from './serviceWorker';
 
 const render = () => ReactDOM.render(<App />, document.getElementById('root'));
 
+
+
 if (module.hot){
     module.hot.accept('./App.js', render)
 }
