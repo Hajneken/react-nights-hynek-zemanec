@@ -1,6 +1,39 @@
-# React Nights - Hynek Zemanec 
+# React Nights - Hynek Zemanec
 
-Repository for homework submitted for the React Nights Academy led by folks at STRV.
+This project is used as a training excercise for the STRV React Nights 2019.
+
+The goal of this project is to build production-ready e-commerce app using [React](https://reactjs.org/).
+
+## Setup
+
+> Awesome `Create React App` described below ⬇ has been used to easily set up the project
+
+### Tools
+
+There is a number of code quality tools used in the project.
+
+Those are:
+
+- ESlint
+- Prettier
+- Editorconfig
+- Husky
+
+### API
+
+Dummy data resources are provided by [Commerce Layer](https://commercelayer.io/).
+
+### VS Code extensions
+
+If using VS Code Handful extensions are recommended:
+
+- Prettier
+- Babel JavaScript
+- ESLint
+- htmltagwrap
+- Import Cost
+- Indenticator
+- Very Smart Select
 
 ---
 
