@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
 
+import React, { Component } from 'react'
 
-// HW to fetch all products
+// HW to fetch Product Details
 
 export class ProductDetail extends Component {
-  state = {}
-
-  render(){
+  state = {
+    
+  }
+  render() {
     const { match } = this.props
     return (
       <div>
-      <h1>Product Detail: {match.params.productId}</h1>
+        <h1>Product detail: {match.params.productId}</h1>
       </div>
     )
   }

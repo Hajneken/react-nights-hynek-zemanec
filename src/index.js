@@ -6,12 +6,9 @@ import GlobalStyles from './GlobalStyles';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-
-
 const render = () =>
   ReactDOM.render(
     <Router>
-      <GlobalStyles />
       <App />
     </Router>,
     document.getElementById('root')
