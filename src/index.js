@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import GlobalStyles from './GlobalStyles';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -10,6 +11,7 @@ import * as serviceWorker from './serviceWorker';
 const render = () =>
   ReactDOM.render(
     <Router>
+      <GlobalStyles />
       <App />
     </Router>,
     document.getElementById('root')

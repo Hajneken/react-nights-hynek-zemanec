@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
 
+import H1 from '../../components/H1'
 import { getProducts } from "../../api/get-products";
+import Loader from "../../components/Loader";
 
 
 export class ProductList extends Component {
@@ -39,8 +41,8 @@ export class ProductList extends Component {
 
     return (
     <div>
-      <h1>E-Commerce app</h1>
-      {isLoading && <div>Loading ...</div>}
+      <H1 textAlign={"center"}>E-Commerce app</H1>
+      {isLoading && <Loader/>}
       {data && (
         <ul>
           {data.map(({ id, attributes: item }) => (
