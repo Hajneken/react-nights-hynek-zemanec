@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
 
-import H1 from '../../components/H1'
+import {H1} from '../../components/Typography'
 import { getProducts } from "../../api/get-products";
 import Loader from "../../components/Loader";
 

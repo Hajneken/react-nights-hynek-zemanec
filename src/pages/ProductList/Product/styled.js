@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 import { Link as BaseLink } from 'react-router-dom'
-import theme from '../../../../../common/theme'
+import theme from '../../../global/theme'
 
  export const Wrapper = styled.li``
 

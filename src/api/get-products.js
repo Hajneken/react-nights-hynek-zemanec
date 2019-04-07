@@ -12,7 +12,14 @@ export const getProducts = async () => {
     }
   })
 
-  return res.json();
+  const { data, included } = await res.json();
+
+  return data.map(product => ({
+    // ❓❓❓
+    ...product.attributes,
+    id: product.id,
+    price: included.find(
+      price => price.id === product.relationships.prices.data[0].id
+    ).attributes,
+  }))
 }
-
-
