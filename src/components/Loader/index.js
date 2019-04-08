@@ -1,4 +1,5 @@
 import React from 'react'
+import {H1} from '../Typography'
 import { LoaderWrap, StyledLoader, Circular, Path } from './styled'
 
  const Loader = props => (
@@ -16,6 +17,8 @@ import { LoaderWrap, StyledLoader, Circular, Path } from './styled'
         />
       </Circular>
     </StyledLoader>
+    <H1 textAlign="center">Are you ready fo dis?</H1>
+    <H1 textAlign="center"><span role='img' aria-label="ninja kitty">🐱‍👤</span></H1>
   </LoaderWrap>
 )
 

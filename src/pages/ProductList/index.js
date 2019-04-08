@@ -1,58 +1,42 @@
-import React, { Component } from "react";
-import {Link} from 'react-router-dom';
+import React, {Component} from 'react';
+import {getProducts} from '../../api/get-products'
+import Loader from '../../components/Loader';
+import Product from '../../components/List/Product';
+// Exported as default, therefore can be named as anything
+import ProductListComponent from '../../components/ProductList'
 
 import {H1} from '../../components/Typography'
-import { getProducts } from "../../api/get-products";
-import Loader from "../../components/Loader";
 
 
-export class ProductList extends Component {
+class ProductList extends Component{
+
   state = {
-    isLoading: "true",
-    products: {}
-  };
+    isLoading: true,
+    products: [],
+  }
 
-  // equvalent to ⬇
-  // -------------------------
-  // constructor(props){
-  //   super(props)
-  //   this.state = {
-  //     isLoading: 'true',
-  //     products: [],
-  //   }
-  // }
+  async componentDidMount(){
+    let products = await getProducts();
 
-  async componentDidMount() {
-
-    const products = await getProducts();
-
-  this.setState({
-    isLoading: false,
-    products,
+    this.setState({
+      isLoading: false,
+      products,
     })
   }
 
-  render() {
+  render(){
+    const {isLoading, products} = this.state;
 
-    const {
-      isLoading,
-      products: { data },
-    } = this.state;
-
-    return (
-    <div>
-      <H1 textAlign={"center"}>E-Commerce app</H1>
-      {isLoading && <Loader/>}
-      {data && (
-        <ul>
-          {data.map(({ id, attributes: item }) => (
-            <li key={id}>
-              <Link nk to={`/${id}`}>{item.name}</Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    return(
+      <>
+        <H1 textAlign="center">Very beautiful E-commerce App <span role="img" aria-label="briefcase">💼</span></H1>
+        {isLoading && <Loader/>}
+        {/* ProductList component 🤘😎 */}
+        {!isLoading && <ProductListComponent products={products}/>}
+      </>
     )
   }
+
 }
+
+export {ProductList}

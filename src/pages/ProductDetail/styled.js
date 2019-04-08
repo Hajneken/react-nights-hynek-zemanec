@@ -38,3 +38,14 @@ export const Description = styled.span`
   margin: 2rem 0;
   text-align: center;
 `
+
+export const TitleWrap = styled.div`
+  height: 6.7rem;
+  overflow: hidden;
+`
+
+export const Title = styled.h3`
+  font-size: 1.6rem;
+  font-weight: 100;
+  text-transform: uppercase;
+`

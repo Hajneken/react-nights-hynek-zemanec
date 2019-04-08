@@ -1,18 +1,20 @@
-import React from 'react'
-import { Wrapper, ImgWrapper, Img, TitleWrap, Title, Price, Link } from './styled'
+import React from 'react';
+import { Wrapper, ImgWrapper, Img, TitleWrapper, Title, Price } from './styled';
+import {Link} from 'react-router-dom';
 
- const Product = ({ node }) => (
+
+const Product = ({node}) => (
   <Wrapper>
     <Link to={node.id}>
       <ImgWrapper>
         <Img src={node.image_url} alt={`${node.name} image`} />
       </ImgWrapper>
-      <TitleWrap>
+      <TitleWrapper>
         <Title>{node.name}</Title>
-      </TitleWrap>
+      </TitleWrapper>
       <Price>{node.price.formatted_amount}</Price>
     </Link>
   </Wrapper>
 )
 
- export default Product
+export default Product;

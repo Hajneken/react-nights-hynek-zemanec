@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from 'react-router-dom';
 import GlobalStyles from './GlobalStyles'
 
-import { ProductList } from './pages/ProductList/index';
+import { ProductList } from './pages/ProductList';
 import ProductDetail from "./pages/ProductDetail";
 
 class App extends Component {
