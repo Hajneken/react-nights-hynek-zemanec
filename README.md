@@ -8,6 +8,8 @@ The goal of this project is to build production-ready e-commerce app using [Reac
 
 > Awesome `Create React App` described below ⬇ has been used to easily set up the project
 
+Also also also, `yarn` is used to manage dependencies now 😎 🏎
+
 ## Project Structure
 
 > The project follows **Group By Feature** architecture, bundling it's parts by functionality
@@ -30,7 +32,9 @@ The structure is following:
 
 [Styled Components](https://www.styled-components.com/) have been used for styles as it brilliantly solves all scoping problems we have all previously struggled with.
 
-just `npm install --save styled-components` 😎 and 🎊
+just `npm install --save-dev styled-components` 😎 and 🎊
+
+or cool bois do `yarn add styled-components`
 
 ### Tools
 
