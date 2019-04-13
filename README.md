@@ -8,6 +8,30 @@ The goal of this project is to build production-ready e-commerce app using [Reac
 
 > Awesome `Create React App` described below ⬇ has been used to easily set up the project
 
+## Project Structure
+
+> The project follows **Group By Feature** architecture, bundling it's parts by functionality
+
+The structure is following:
+
+- `/components`
+  - grouping all reusable components that are used among `pages`
+- `/pages`
+  - components with a specific use-case visible 👀 by the user 👤
+- `/store`
+  - code handeling global state
+- `/api`
+  - code seperating communication between the app and api used
+  - a.k.a. bridge 🌉 between the View and the server
+- `/config.js`
+  - place for congigurations of code during runtime
+
+## Styling
+
+[Styled Components](https://www.styled-components.com/) have been used for styles as it brilliantly solves all scoping problems we have all previously struggled with.
+
+just `npm install --save styled-components` 😎 and 🎊
+
 ### Tools
 
 There is a number of code quality tools used in the project.
@@ -15,9 +39,13 @@ There is a number of code quality tools used in the project.
 Those are:
 
 - ESlint
+  - to watch your buggy code
 - Prettier
+  - to format your ugly code
 - Editorconfig
+  - to make common coding rules for everyone
 - Husky
+  - to force you not to `git push` any embarassing code
 
 ### API
 
