@@ -3,7 +3,7 @@ import React, { Component } from 'react'
  import ProductListComponent from '../components/List/index'
 // import Layout from '../../components/Layout'
 import Loader from '../../components/Loader'
-import { H1 } from '../../components/Typography'
+import { H1 } from '../components/Typography/index'
 
  import { getProducts } from '../api/get-products'
 

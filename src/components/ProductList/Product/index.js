@@ -1,9 +1,8 @@
 import React from 'react';
-import { Wrapper, ImgWrapper, Img, TitleWrapper, Title, Price } from './styled';
-import {Link} from 'react-router-dom';
+import { Wrapper, ImgWrapper, Img, TitleWrapper, Title, Price, AddButton, Link } from './styled';
 
 
-const Product = ({node}) => (
+const Product = ({node, onAddToCart}) => (
   <Wrapper>
     <Link to={node.id}>
       <ImgWrapper>
@@ -13,8 +12,10 @@ const Product = ({node}) => (
         <Title>{node.name}</Title>
       </TitleWrapper>
       <Price>{node.price.formatted_amount}</Price>
+      <AddButton onClick={evt => onAddToCart(node.id, evt)}>Add to cart</AddButton>
     </Link>
   </Wrapper>
 )
 
 export default Product;
+

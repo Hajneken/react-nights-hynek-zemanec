@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {getProducts} from '../../api/get-products'
 import Loader from '../../components/Loader';
-import Product from '../../components/List/Product';
 // Exported as default, therefore can be named as anything
 import ProductListComponent from '../../components/ProductList'
 
