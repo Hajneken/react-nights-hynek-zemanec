@@ -4,9 +4,13 @@ This project is used as a training excercise for the STRV React Nights 2019.
 
 The goal of this project is to build production-ready e-commerce app using [React](https://reactjs.org/).
 
+Additional JS libraries are **Redux** for managing Global State and **Styled Components** for pretty effortless styling.
+
 ## Setup
 
 > Awesome `Create React App` described below ⬇ has been used to easily set up the project
+
+Also also also, `yarn` is used to manage dependencies now 😎 🏎
 
 ## Project Structure
 
@@ -19,7 +23,7 @@ The structure is following:
 - `/pages`
   - components with a specific use-case visible 👀 by the user 👤
 - `/store`
-  - code handeling global state
+  - code handeling global state where each *model* has its own directory
 - `/api`
   - code seperating communication between the app and api used
   - a.k.a. bridge 🌉 between the View and the server
@@ -30,7 +34,9 @@ The structure is following:
 
 [Styled Components](https://www.styled-components.com/) have been used for styles as it brilliantly solves all scoping problems we have all previously struggled with.
 
-just `npm install --save styled-components` 😎 and 🎊
+just `npm install --save-dev styled-components` 😎 and 🎊
+
+or cool bois do `yarn add styled-components`
 
 ### Tools
 

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
- export const ProductsWrap = styled.ul`
+export const ProductsWrapper = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,4 +8,4 @@ import styled from 'styled-components'
   margin-top: 4rem;
   padding: 0;
   list-style: none;
-`
+`;

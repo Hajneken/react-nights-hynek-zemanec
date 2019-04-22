@@ -14,7 +14,7 @@ import {
 import Loader from '../../components/Loader';
 import { H1 } from '../../components/Typography';
 
-export default class ProductDetail extends React.Component {
+class ProductDetail extends React.Component {
   state = {
     product: null,
   };
@@ -65,3 +65,5 @@ export default class ProductDetail extends React.Component {
     );
   }
 }
+
+export { ProductDetail };
