@@ -5,8 +5,8 @@ import { H1 } from '../../components/Typography/H1';
 
 import { getProducts } from '../../api/get-products';
 
-import { loadProducts } from '../../store/products/action';
-import { addProduct } from '../../store/cartItems/action';
+import { loadProducts } from '../../store/products/actions';
+import { addProduct } from '../../store/cartItems/actions';
 import Loader from '../../components/Loader';
 import { ProductsWrapper } from './styled';
 import Layout from '../../components/Layout';

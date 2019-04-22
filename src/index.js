@@ -7,15 +7,14 @@ import * as serviceWorker from './serviceWorker';
 
 const root = document.getElementById('root');
 
-const render = () =>{
+const render = () => {
   ReactDOM.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>,
     root
   );
-}
-
+};
 
 if (module.hot) {
   module.hot.accept('./App.js', render);

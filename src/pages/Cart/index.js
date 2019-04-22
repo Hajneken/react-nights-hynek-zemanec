@@ -12,7 +12,9 @@ class CartView extends React.Component {
         <ul>
           {this.props.items.map(item => (
             <li key={item.product.id}>
-              {item.product.name} - {item.quantity}
+              <p>
+                {item.product.name} - {item.quantity}
+              </p>
             </li>
           ))}
         </ul>
@@ -22,7 +24,7 @@ class CartView extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  items: Object.keys(state.CartItems).map(productId => ({
+  items: Object.keys(state.cartItems).map(productId => ({
     quantity: state.cartItems[productId],
     product: state.cartItems.find(p => p.id === productId),
   })),
